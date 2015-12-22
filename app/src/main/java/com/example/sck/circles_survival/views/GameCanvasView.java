@@ -18,6 +18,7 @@ public class GameCanvasView extends View implements IGameCanvasView {
     private Paint mPaint;
     private Canvas mCanvas;
     private Toast mToast;
+    private static String sGameBGcolor = null;
 
     public GameCanvasView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -26,6 +27,14 @@ public class GameCanvasView extends View implements IGameCanvasView {
         initPaint();
 
         mGameManager = new GameManager(this, sCanvasWidth, sCanvasHeight);
+    }
+
+    public static String getGameBGcolor() {
+        return sGameBGcolor;
+    }
+
+    public static void setGameBGcolor(String gameBGcolor) {
+        sGameBGcolor = gameBGcolor;
     }
 
     private void initPaint() {
@@ -92,7 +101,7 @@ public class GameCanvasView extends View implements IGameCanvasView {
     }
 
 
-    public static int recalculateRadius(int mRadius) {
-        return mRadius * 768 / sCanvasWidth < sCanvasHeight ? sCanvasWidth : sCanvasHeight;
-    }
+//    public static int recalculateRadius(int mRadius) {
+//        return mRadius * 768 / sCanvasWidth < sCanvasHeight ? sCanvasWidth : sCanvasHeight;
+//    }
 }

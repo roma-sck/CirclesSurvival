@@ -11,12 +11,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.example.sck.circles_survival.App;
-import com.example.sck.circles_survival.activities.MainActivity;
 import com.example.sck.circles_survival.adapters.ExpandListAdapter;
 import com.example.sck.circles_survival.R;
+import com.example.sck.circles_survival.views.GameCanvasView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -55,13 +54,8 @@ public class GameSettingsFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
-                // показываем позиция нажатого элемента
-                Toast.makeText(App.getContext(), "Position = " + position, Toast.LENGTH_SHORT).show();
-
-//                SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
-//                SharedPreferences.Editor editor = sharedPref.edit();
-//                editor.putInt(getString(R.string.saved_max_enemies), arr_numOfEnemies[position]);
-//                editor.apply();
+//                // показываем позиция нажатого элемента
+//                Toast.makeText(App.getContext(), "Position = " + position, Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -99,7 +93,7 @@ public class GameSettingsFragment extends Fragment {
 
                 // set game background color
                 String selectedBGcolor = getResources().getStringArray(R.array.bground_colors)[childPosition];
-                MainActivity.setGameBGcolor(selectedBGcolor);
+                GameCanvasView.setGameBGcolor(selectedBGcolor);
 
                 return false;
             }

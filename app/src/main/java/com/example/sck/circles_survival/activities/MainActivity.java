@@ -21,18 +21,9 @@ import com.example.sck.circles_survival.adapters.ViewPagerAdapter;
 import com.example.sck.circles_survival.fragments.GameSettingsFragment;
 import com.example.sck.circles_survival.R;
 import com.example.sck.circles_survival.fragments.AboutGameFragment;
+import com.example.sck.circles_survival.views.GameCanvasView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static String sGameBGcolor = null;
-
-    public static String getGameBGcolor() {
-        return sGameBGcolor;
-    }
-
-    public static void setGameBGcolor(String gameBGcolor) {
-        sGameBGcolor = gameBGcolor;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view FloatingActionButton onClick
      */
     public void startTheGame(View view) {
-        if( sGameBGcolor != null ) {
+        if( GameCanvasView.getGameBGcolor() != null ) {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         } else {

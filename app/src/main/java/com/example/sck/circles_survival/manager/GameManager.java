@@ -4,7 +4,6 @@ import android.graphics.Color;
 
 import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.R;
-import com.example.sck.circles_survival.activities.MainActivity;
 import com.example.sck.circles_survival.views.BaseCircle;
 import com.example.sck.circles_survival.views.GameCanvasView;
 import com.example.sck.circles_survival.views.EnemyCircle;
@@ -26,7 +25,7 @@ public class GameManager {
         sCanvasWidth = w;
         sCanvasHeight = h;
 
-        int selectedColor = defineBGcolor(MainActivity.getGameBGcolor());
+        int selectedColor = defineBGcolor(GameCanvasView.getGameBGcolor());
         mGameCanvas.setBackgroundColor( selectedColor );
 
         initMainCircle();
@@ -51,10 +50,6 @@ public class GameManager {
     private void initEnemyCircles() {
         BaseCircle mainCircleArea = mPlayerCircle.getCircleArea();
         mEnemyCircles = new ArrayList<>();
-
-//        SharedPreferences sharedPref = App.getContext().getPreferences(Context.MODE_PRIVATE);
-//        int defaultValue = App.getContext().getResources().getInteger(R.integer.saved_max_enemies_default);
-//        long highScore = sharedPref.getInt(getString(R.string.saved_max_enemies), defaultValue);
 
         for (int i = 0; i < MAX_ENEMIES; i++) {
             EnemyCircle circle;
