@@ -29,9 +29,6 @@
 
     <string name="about_game_text">This is a very simple but interesting game bla bla bla</string>
 
-    <string name="saved_max_enemies">SAVED_MAX_ENEMIES</string>
-    <integer name="saved_max_enemies_default">10</integer>
-
     <string-array name="bground_colors">
         <item>Gray</item>
         <item>White</item>
