@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HungryBall</string>
+    <string name="app_name">CirclesSurvival</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_email">"Email developer"</string>
