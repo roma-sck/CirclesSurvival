@@ -26,9 +26,10 @@ public class GameManager {
         sCanvasHeight = h;
 
         int selectedColor = defineBGcolor(GameCanvasView.getGameBGcolor());
-        mGameCanvas.setBackgroundColor( selectedColor );
+        mGameCanvas.setBackgroundColor(selectedColor);
 
         initMainCircle();
+
         initEnemyCircles();
     }
 
@@ -45,6 +46,11 @@ public class GameManager {
                 break;
         }
         return intGameBGcolor;
+    }
+
+
+    private void initMainCircle() {
+        mPlayerCircle = new PlayerCircle(sCanvasWidth / 2, sCanvasHeight / 2);
     }
 
     private void initEnemyCircles() {
@@ -73,10 +79,6 @@ public class GameManager {
 
     public static int getsCanvasHeight() {
         return sCanvasHeight;
-    }
-
-    private void initMainCircle() {
-        mPlayerCircle = new PlayerCircle(sCanvasWidth / 2, sCanvasHeight / 2);
     }
 
     public void onDraw() {

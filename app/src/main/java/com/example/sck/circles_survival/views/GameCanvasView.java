@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.*;
 import android.widget.Toast;
 
+import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.manager.GameManager;
 
 public class GameCanvasView extends View implements IGameCanvasView {
