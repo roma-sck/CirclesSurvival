@@ -1,6 +1,6 @@
 # CirclesSurvival
 
-My remake of game [link to RGBCircles!](https://github.com/khasang/RGBCircles)
+My remake of game [RGBCircles!](https://github.com/khasang/RGBCircles)
 
 
 ( not finished yet )
