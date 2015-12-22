@@ -5,15 +5,14 @@
     android:orientation="vertical"
     android:padding="@dimen/md_keylines">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/howToPlay_text"
+        android:text="@string/about_game_text"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:textSize="15sp" />
+        android:paddingTop="@dimen/fragment_about_text_padding"
+        android:paddingBottom="@dimen/fragment_about_text_padding"
+        android:textSize="@dimen/fragments_text_size" />
 
 </LinearLayout>

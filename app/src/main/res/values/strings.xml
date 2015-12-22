@@ -19,11 +19,15 @@
     <string name="tab_game_settings_name">"Game Settings"</string>
     <string name="tab_game_about_name">"About"</string>
 
+    <string name="text_num_of_enemies">"Number of enemies: "</string>
+
+    <string name="text_lets_play">"Let's Play"</string>
+
     <string name="explist_bgcolor_groupname">"Set background color"</string>
 
     <string name="please_set_bg_color">" Please set background color "</string>
 
-    <string name="howToPlay_text">This is a very simple but interesting game bla bla bla</string>
+    <string name="about_game_text">This is a very simple but interesting game bla bla bla</string>
 
     <string name="saved_max_enemies">SAVED_MAX_ENEMIES</string>
     <integer name="saved_max_enemies_default">10</integer>

@@ -9,11 +9,10 @@
         android:layout_width="wrap_content"
         android:choiceMode="singleChoice"
         android:listSelector="@drawable/row_highlighter"
-        android:layout_height="50dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/elv_text_group_height"
+        android:layout_marginLeft="@dimen/elv_text_group_margin_left"
+        android:layout_marginTop="@dimen/elv_text_group_margin_top"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
 </LinearLayout>

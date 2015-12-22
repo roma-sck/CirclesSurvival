@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:text="Let's Play"/>
+        android:text="@string/text_lets_play" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

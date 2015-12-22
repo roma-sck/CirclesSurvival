@@ -6,8 +6,7 @@
 
     <com.example.sck.circles_survival.views.GameCanvasView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#6c86a4" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
 

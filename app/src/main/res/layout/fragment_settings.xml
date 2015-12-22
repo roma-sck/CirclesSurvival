@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/md_keylines">
+
+
+    <TextView
+        android:id="@+id/num_of_enemies_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_num_of_enemies"
+        android:textSize="@dimen/fragments_text_size"
+        android:layout_below="@id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_numOfEnemies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/num_of_enemies_text"
+        android:paddingTop="@dimen/spinner_padding_top_left"
+        android:paddingLeft="@dimen/spinner_padding_top_left"
+        android:minHeight="@dimen/spinner_min_width_height"
+        android:minWidth="@dimen/spinner_min_width_height"
+        android:layout_alignBottom="@id/num_of_enemies_text"
+        android:paddingBottom="@dimen/spinner_padding_bottom" />
+
+    <ExpandableListView
+        android:id="@+id/exListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/row_highlighter"
+        android:indicatorLeft="@dimen/elv_indicator_left"
+        android:indicatorRight="@dimen/elv_indicator_right"
+        android:layout_below="@id/spinner_numOfEnemies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
