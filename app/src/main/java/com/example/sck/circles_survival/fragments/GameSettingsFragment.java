@@ -15,6 +15,7 @@ import android.widget.Spinner;
 import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.adapters.ExpandListAdapter;
 import com.example.sck.circles_survival.R;
+import com.example.sck.circles_survival.manager.GameManager;
 import com.example.sck.circles_survival.views.GameCanvasView;
 
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ public class GameSettingsFragment extends Fragment {
         Spinner spinner = (Spinner) getActivity().findViewById(R.id.spinner_numOfEnemies);
 
         // array with numbers of enemies
-        final Integer[] arr_numOfEnemies = {10, 15, 5};
+        final Integer[] arr_numOfEnemies = {10, 15, 20};
 
         // create adapter
         ArrayAdapter<Integer> adapter = new ArrayAdapter<>(getActivity(),
@@ -54,8 +55,7 @@ public class GameSettingsFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
-//                // показываем позиция нажатого элемента
-//                Toast.makeText(App.getContext(), "Position = " + position, Toast.LENGTH_SHORT).show();
+                GameManager.setMaxEnemies(arr_numOfEnemies[position]);
             }
 
             @Override

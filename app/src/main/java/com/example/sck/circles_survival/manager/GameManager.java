@@ -1,6 +1,7 @@
 package com.example.sck.circles_survival.manager;
 
 import android.graphics.Color;
+import android.widget.Toast;
 
 import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.R;
@@ -13,12 +14,12 @@ import java.util.ArrayList;
 
 public class GameManager {
 
-    public static final int MAX_ENEMIES = 10;
     private PlayerCircle mPlayerCircle;
     private ArrayList<EnemyCircle> mEnemyCircles;
     private GameCanvasView mGameCanvas;
     private static int sCanvasWidth;
     private static int sCanvasHeight;
+    private static int sMaxEnemies;
 
     public GameManager(GameCanvasView mGameCanvas, int w, int h) {
         this.mGameCanvas = mGameCanvas;
@@ -31,6 +32,14 @@ public class GameManager {
         initMainCircle();
 
         initEnemyCircles();
+    }
+
+    public static int getMaxEnemies() {
+        return sMaxEnemies;
+    }
+
+    public static void setMaxEnemies(int enemies) {
+        sMaxEnemies = enemies;
     }
 
     private int defineBGcolor(String strGameBGcolor) {
@@ -48,7 +57,6 @@ public class GameManager {
         return intGameBGcolor;
     }
 
-
     private void initMainCircle() {
         mPlayerCircle = new PlayerCircle(sCanvasWidth / 2, sCanvasHeight / 2);
     }
@@ -56,8 +64,7 @@ public class GameManager {
     private void initEnemyCircles() {
         BaseCircle mainCircleArea = mPlayerCircle.getCircleArea();
         mEnemyCircles = new ArrayList<>();
-
-        for (int i = 0; i < MAX_ENEMIES; i++) {
+        for (int i = 0; i < getMaxEnemies(); i++) {
             EnemyCircle circle;
             do {
                 circle = EnemyCircle.getRandomCircle();
