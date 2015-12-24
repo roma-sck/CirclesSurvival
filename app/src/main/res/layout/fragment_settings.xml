@@ -11,11 +11,12 @@
         android:layout_height="wrap_content"
         android:text="@string/text_num_of_enemies"
         android:textSize="@dimen/fragments_text_size"
+        android:textStyle="bold"
         android:layout_below="@id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingTop="10dp"
-        android:paddingBottom="20dp" />
+        android:paddingTop="@dimen/spinner_padding_top_left"
+        android:paddingBottom="@dimen/spinner_padding_bottom" />
 
     <Spinner
         android:id="@+id/spinner_numOfEnemies"

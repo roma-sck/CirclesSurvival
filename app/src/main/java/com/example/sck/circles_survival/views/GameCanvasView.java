@@ -86,7 +86,6 @@ public class GameCanvasView extends View implements IGameCanvasView {
     @Override
     public void showMessage(String text) {
         // shows WIN or LOSE message dialog
-
         final Dialog dialog = new Dialog(getContext());
         dialog.setContentView(R.layout.dialog_game_end);
         dialog.setCancelable(false);
@@ -111,9 +110,7 @@ public class GameCanvasView extends View implements IGameCanvasView {
                 dialog.dismiss();
             }
         });
-
         dialog.show();
-
     }
 
     @Override

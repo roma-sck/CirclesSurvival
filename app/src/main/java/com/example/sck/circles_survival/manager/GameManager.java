@@ -136,15 +136,9 @@ public class GameManager {
 
     private void gameEnd(String text) {
         mGameCanvas.showMessage(text);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         mPlayerCircle.initRadius();
         initEnemyCircles();
         mGameCanvas.redraw();
-
     }
 
     private void moveCircles() {
