@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/gameResult"
+        android:layout_width="@dimen/dialog_game_end_views_width"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/dialog_game_end_result_textsize"
+        android:textColor="@color/dialog_game_end_result_textcolor"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dialog_game_end_views_width"
+        android:layout_height="@dimen/dialog_game_end_img_height"
+        android:padding="@dimen/dialog_game_end_img_padding"
+        android:layout_marginTop="@dimen/dialog_game_end_views_margin"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="@dimen/dialog_game_end_views_width"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_game_end_btn_text"
+        android:layout_marginTop="@dimen/dialog_game_end_views_margin"
+        />
+
+</LinearLayout>

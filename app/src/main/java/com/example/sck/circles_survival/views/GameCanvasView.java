@@ -1,14 +1,18 @@
 package com.example.sck.circles_survival.views;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.util.AttributeSet;
 import android.view.*;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sck.circles_survival.App;
+import com.example.sck.circles_survival.R;
 import com.example.sck.circles_survival.manager.GameManager;
 
 public class GameCanvasView extends View implements IGameCanvasView {
@@ -81,13 +85,35 @@ public class GameCanvasView extends View implements IGameCanvasView {
 
     @Override
     public void showMessage(String text) {
-        if (mToast != null) {
-            mToast.cancel();
+        // shows WIN or LOSE message dialog
+
+        final Dialog dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.dialog_game_end);
+        dialog.setCancelable(false);
+        dialog.setTitle(R.string.dialog_game_end_title);
+
+        // set the dialog components
+        TextView gameResult = (TextView) dialog.findViewById(R.id.gameResult);
+        gameResult.setText(text);
+
+        ImageView image = (ImageView) dialog.findViewById(R.id.image);
+        if(text.equals(getResources().getString(R.string.game_win))) {
+            image.setImageResource(R.drawable.game_win);
+        } else {
+            image.setImageResource(R.drawable.game_lose);
         }
-        // shows WIN or LOSE message toasts
-        mToast = Toast.makeText(getContext(), text, Toast.LENGTH_SHORT);
-        mToast.setGravity(Gravity.CENTER, 0, 0);
-        mToast.show();
+
+        Button btnOk = (Button) dialog.findViewById(R.id.btnOk);
+        btnOk.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // if btnOk clicked - close the dialog
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
     }
 
     @Override

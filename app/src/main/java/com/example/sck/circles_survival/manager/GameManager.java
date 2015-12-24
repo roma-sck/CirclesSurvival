@@ -117,7 +117,7 @@ public class GameManager {
                     // if it is big enemy-circle - reduceRadius(
                     mPlayerCircle.reduceRadius();
                     if(mPlayerCircle.getRadius() < PlayerCircle.PLAYER_INIT_RADIUS) {
-                        // if radius smaller PLAYER_INIT_RADIUS - GAME OVER
+                        // if radius smaller than INIT_RADIUS -> GAME OVER
                         gameEnd(App.getContext().getString(R.string.game_lose));
                         return;
                     } else {
@@ -136,9 +136,15 @@ public class GameManager {
 
     private void gameEnd(String text) {
         mGameCanvas.showMessage(text);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         mPlayerCircle.initRadius();
         initEnemyCircles();
         mGameCanvas.redraw();
+
     }
 
     private void moveCircles() {

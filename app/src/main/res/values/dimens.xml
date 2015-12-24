@@ -22,4 +22,10 @@
     <dimen name="spinner_min_width_height">25dp</dimen>
     <dimen name="spinner_padding_bottom">20dp</dimen>
 
+    <dimen name="dialog_game_end_views_width">100dp</dimen>
+    <dimen name="dialog_game_end_views_margin">10dp</dimen>
+    <dimen name="dialog_game_end_img_height">80dp</dimen>
+    <dimen name="dialog_game_end_img_padding">10dp</dimen>
+    <dimen name="dialog_game_end_result_textsize">20sp</dimen>
+
 </resources>

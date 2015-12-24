@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         message.setText(s);
         message.setMovementMethod(LinkMovementMethod.getInstance());
 
-        // build dialog
+        // build dialog_game_end
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.dialogTitleAbout);
         builder.setView(message);

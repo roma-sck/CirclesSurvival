@@ -39,4 +39,7 @@
     <string name="game_win">"YOU WIN!"</string>
     <string name="game_lose">"YOU LOSE!"</string>
 
+    <string name="dialog_game_end_title">"GAME OVER"</string>
+    <string name="dialog_game_end_btn_text">" OK "</string>
+
     </resources>
