@@ -1,7 +1,6 @@
 package com.example.sck.circles_survival.manager;
 
 import android.graphics.Color;
-import android.widget.Toast;
 
 import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.R;

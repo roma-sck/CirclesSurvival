@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param view FloatingActionButton onClick
      */
-    public void startTheGame(View view) {
+    public void startGameClickListener(View view) {
         if( GameCanvasView.getGameBGcolor() != null ) {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
