@@ -6,8 +6,8 @@ import com.example.sck.circles_survival.manager.GameManager;
 
 public class PlayerCircle extends BaseCircle {
 
-    public static final int PLAYER_INIT_RADIUS = 50;
-    public static final int PLAYER_MAIN_SPEED = 30;
+    public static final int PLAYER_INIT_RADIUS = 35;
+    public static final int PLAYER_MAIN_SPEED = 20;
     public static final int PLAYER_COLOR = Color.BLUE;
 
     public PlayerCircle(int x, int y) {
