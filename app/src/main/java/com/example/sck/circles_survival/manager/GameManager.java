@@ -70,10 +70,10 @@ public class GameManager {
             } while (circle.isIntersect(mainCircleArea));
             mEnemyCircles.add(circle);
         }
-        calculateAndSetCirclesColor();
+        setEnemyCirclesColor();
     }
 
-    private void calculateAndSetCirclesColor() {
+    private void setEnemyCirclesColor() {
         for (EnemyCircle circle : mEnemyCircles) {
             circle.setEnemyOrFoodColor(mPlayerCircle);
         }
@@ -110,7 +110,7 @@ public class GameManager {
                 if (circle.isSmallerThan(mPlayerCircle)) {
                     mPlayerCircle.growRadius(circle);
                     mEnemyCircles.remove(circle);
-                    calculateAndSetCirclesColor();
+                    setEnemyCirclesColor();
                     break;
                 } else {
                     // if it is big enemy-circle - reduceRadius(
@@ -121,7 +121,7 @@ public class GameManager {
                         return;
                     } else {
                         // continue playing
-                        calculateAndSetCirclesColor();
+                        setEnemyCirclesColor();
                         break;
                     }
                 }

@@ -10,7 +10,6 @@ import android.view.*;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.sck.circles_survival.R;
 import com.example.sck.circles_survival.manager.GameManager;
@@ -22,7 +21,6 @@ public class GameCanvasView extends View implements IGameCanvasView {
     private GameManager mGameManager;
     private Paint mPaint;
     private Canvas mCanvas;
-    private Toast mToast;
     private static String sGameBGcolor = null;
 
     public GameCanvasView(Context context, AttributeSet attrs) {
@@ -123,9 +121,4 @@ public class GameCanvasView extends View implements IGameCanvasView {
         invalidate();
         return true;
     }
-
-
-//    public static int recalculateRadius(int mRadius) {
-//        return mRadius * 768 / sCanvasWidth < sCanvasHeight ? sCanvasWidth : sCanvasHeight;
-//    }
 }
