@@ -8,8 +8,8 @@ import java.util.Random;
 
 public class EnemyCircle extends BaseCircle {
 
-    public static final int FROM_RADIUS = 5;
-    public static final int TO_RADIUS = 80;
+    public static final int FROM_RADIUS = 10;
+    public static final int TO_RADIUS = 110;
     public static final int ENEMY_COLOR = Color.RED;
     public static final int FOOD_COLOR = Color.GREEN;
     public static final int RANDOM_SPEED = 10;
