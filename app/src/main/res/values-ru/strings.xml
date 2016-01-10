@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">" Circles Survival"</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_email">"Написать разработчику"</string>
+    <string name="menu_about">"О приложении"</string>
+    <string name="menu_exit">"Выход"</string>
+
+    <string name="dialogTitleAbout">О приложении</string>
+    <string name="dialogMsgAbout">\n"  "Игра римейк\n"  "от  roma.sck@gmail.com\n\n
+        "  "Оригинальная игра:\n"  "https://github.com/khasang/RGBCircles\n</string>
+
+    <string name="mailto">mailto</string>
+    <string name="my_mail">roma.sck@gmail.com</string>
+    <string name="email_subject">Censor News Reader отчет: </string>
+    <string name="email_text">"\n Мне нравится ваше приложение."</string>
+    <string name="email_dialog_header">Отправить е-мэйл</string>
+
+    <string name="tab_game_settings_name">"Настройки игры"</string>
+    <string name="tab_game_about_name">"О Приложении"</string>
+
+    <string name="text_num_of_enemies">"Количество врагов: "</string>
+
+    <string name="text_lets_play">"Играть"</string>
+
+    <string name="explist_bgcolor_groupname">"Выбрать цвет фона"</string>
+
+    <string name="please_set_bg_color">" Пожалуйста, выберите цвет фона "</string>
+
+    <string name="about_game_text">Это очень простая, но очень интересная игра, бла-бла-бла</string>
+
+    <string-array name="bground_colors">
+        <item>Серый</item>
+        <item>Белый</item>
+        <item>Черный</item>
+        <item>Пурпурный</item>
+    </string-array>
+
+    <string name="game_win">"ВЫ ВЫИГРАЛИ!"</string>
+    <string name="game_lose">"ВЫ ПРОИГРАЛИ!"</string>
+
+    <string name="dialog_game_end_title">"ИГРА ОКОНЧЕНА"</string>
+    <string name="dialog_game_end_btn_text">" ОК "</string>
+
+    </resources>
