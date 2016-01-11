@@ -135,8 +135,10 @@ public class GameManager {
 
     private void gameEnd(String text) {
         mGameCanvas.showMessage(text);
+
         mPlayerCircle.initRadius();
         initEnemyCircles();
+
         mGameCanvas.redraw();
     }
 
