@@ -21,7 +21,7 @@ public class GameCanvasView extends View implements IGameCanvasView {
     private GameManager mGameManager;
     private Paint mPaint;
     private Canvas mCanvas;
-    private static String sGameBGcolor = null;
+    private static String sGameBGcolor;
     private Dialog dialog;
 
     public GameCanvasView(Context context, AttributeSet attrs) {
@@ -79,17 +79,21 @@ public class GameCanvasView extends View implements IGameCanvasView {
 
     @Override
     public void redraw() {
+        // invalidate the whole view
         invalidate();
     }
 
+    /**
+     *  shows WIN or LOSE message dialog
+     *
+     * @param text win or lose msg
+     */
     @Override
     public void showMessage(String text) {
         if(dialog != null) {
             dialog.cancel();
         }
         dialog = new Dialog(getContext());
-        // shows WIN or LOSE message dialog
-        //final Dialog dialog = new Dialog(getContext());
         dialog.setContentView(R.layout.dialog_game_end);
         dialog.setCancelable(false);
         dialog.setTitle(R.string.dialog_game_end_title);
