@@ -28,4 +28,8 @@
     <dimen name="dialog_game_end_img_padding">10dp</dimen>
     <dimen name="dialog_game_end_result_textsize">20sp</dimen>
 
+    <dimen name="player_init_radius">25dp</dimen>
+    <dimen name="enemy_from_radius">5dp</dimen>
+    <dimen name="enemy_to_radius">60dp</dimen>
+
 </resources>

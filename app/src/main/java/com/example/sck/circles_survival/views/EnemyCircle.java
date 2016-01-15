@@ -2,14 +2,16 @@ package com.example.sck.circles_survival.views;
 
 import android.graphics.Color;
 
+import com.example.sck.circles_survival.App;
+import com.example.sck.circles_survival.R;
 import com.example.sck.circles_survival.manager.GameManager;
 
 import java.util.Random;
 
 public class EnemyCircle extends BaseCircle {
 
-    public static final int FROM_RADIUS = 10;
-    public static final int TO_RADIUS = 110;
+    public static final int FROM_RADIUS = (int) App.getContext().getResources().getDimension(R.dimen.enemy_from_radius);
+    public static final int TO_RADIUS = (int) App.getContext().getResources().getDimension(R.dimen.enemy_to_radius);
     public static final int ENEMY_COLOR = Color.RED;
     public static final int FOOD_COLOR = Color.GREEN;
     public static final int RANDOM_SPEED = 10;

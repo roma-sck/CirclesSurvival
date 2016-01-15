@@ -1,17 +1,21 @@
 package com.example.sck.circles_survival.views;
 
 import android.graphics.Color;
+import android.widget.Toast;
 
+import com.example.sck.circles_survival.App;
+import com.example.sck.circles_survival.R;
 import com.example.sck.circles_survival.manager.GameManager;
 
 public class PlayerCircle extends BaseCircle {
 
-    public static final int PLAYER_INIT_RADIUS = 50;
+    public static final int PLAYER_INIT_RADIUS = (int) App.getContext().getResources().getDimension(R.dimen.player_init_radius);
     public static final int PLAYER_MAIN_SPEED = 20;
     public static final int PLAYER_COLOR = Color.BLUE;
 
     public PlayerCircle(int x, int y) {
         super(x, y, PLAYER_INIT_RADIUS);
+        Toast.makeText(App.getContext(), "--player-radius--" + PLAYER_INIT_RADIUS, Toast.LENGTH_LONG).show();
         setColor(PLAYER_COLOR);
     }
 
