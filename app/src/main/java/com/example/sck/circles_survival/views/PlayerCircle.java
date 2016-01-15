@@ -1,7 +1,6 @@
 package com.example.sck.circles_survival.views;
 
 import android.graphics.Color;
-import android.widget.Toast;
 
 import com.example.sck.circles_survival.App;
 import com.example.sck.circles_survival.R;
@@ -15,7 +14,6 @@ public class PlayerCircle extends BaseCircle {
 
     public PlayerCircle(int x, int y) {
         super(x, y, PLAYER_INIT_RADIUS);
-        Toast.makeText(App.getContext(), "--player-radius--" + PLAYER_INIT_RADIUS, Toast.LENGTH_LONG).show();
         setColor(PLAYER_COLOR);
     }
 
