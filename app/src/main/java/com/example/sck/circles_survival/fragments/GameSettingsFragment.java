@@ -39,7 +39,7 @@ public class GameSettingsFragment extends Fragment {
         Spinner spinner = (Spinner) getActivity().findViewById(R.id.spinner_numOfEnemies);
 
         // array with numbers of enemies
-        final Integer[] arr_numOfEnemies = {10, 15, 20};
+        final Integer[] arr_numOfEnemies = {10, 7, 12, 15};
 
         // create adapter
         ArrayAdapter<Integer> adapter = new ArrayAdapter<>(getActivity(),
