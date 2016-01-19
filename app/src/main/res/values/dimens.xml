@@ -29,7 +29,9 @@
     <dimen name="dialog_game_end_result_textsize">20sp</dimen>
 
     <dimen name="player_init_radius">25dp</dimen>
+    <dimen name="player_main_speed">20dp</dimen>
     <dimen name="enemy_from_radius">7dp</dimen>
     <dimen name="enemy_to_radius">55dp</dimen>
+    <dimen name="enemy_speed">10dp</dimen>
 
 </resources>

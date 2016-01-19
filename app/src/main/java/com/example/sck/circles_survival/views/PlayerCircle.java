@@ -9,7 +9,7 @@ import com.example.sck.circles_survival.manager.GameManager;
 public class PlayerCircle extends BaseCircle {
 
     public static final int PLAYER_INIT_RADIUS = (int) App.getContext().getResources().getDimension(R.dimen.player_init_radius);
-    public static final int PLAYER_MAIN_SPEED = 20;
+    public static final int PLAYER_SPEED = (int) App.getContext().getResources().getDimension(R.dimen.player_main_speed);
     public static final int PLAYER_COLOR = Color.BLUE;
 
     public PlayerCircle(int x, int y) {
@@ -18,8 +18,8 @@ public class PlayerCircle extends BaseCircle {
     }
 
     public void movePlayerWhenTouch(int x1, int y1) {
-        int dx = (x1 - mXcoord) * PLAYER_MAIN_SPEED / GameManager.getsCanvasWidth();
-        int dy = (y1 - mYcoord) * PLAYER_MAIN_SPEED / GameManager.getsCanvasHeight();
+        int dx = (x1 - mXcoord) * PLAYER_SPEED / GameManager.getsCanvasWidth();
+        int dy = (y1 - mYcoord) * PLAYER_SPEED / GameManager.getsCanvasHeight();
         mXcoord += dx;
         mYcoord += dy;
     }

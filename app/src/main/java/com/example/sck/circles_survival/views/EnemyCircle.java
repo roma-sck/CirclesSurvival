@@ -14,7 +14,7 @@ public class EnemyCircle extends BaseCircle {
     public static final int TO_RADIUS = (int) App.getContext().getResources().getDimension(R.dimen.enemy_to_radius);
     public static final int ENEMY_COLOR = Color.RED;
     public static final int FOOD_COLOR = Color.GREEN;
-    public static final int RANDOM_SPEED = 10;
+    public static final int ENEMY_SPEED = (int) App.getContext().getResources().getDimension(R.dimen.enemy_speed);
     private int mXdistance;
     private int mYdistance;
 
@@ -35,11 +35,10 @@ public class EnemyCircle extends BaseCircle {
         int x = rdm.nextInt(GameManager.getsCanvasWidth());
         int y = rdm.nextInt(GameManager.getsCanvasHeight());
         // random distance of moveOneStep()
-        int dx = 1 + rdm.nextInt(RANDOM_SPEED);
-        int dy = 1 + rdm.nextInt(RANDOM_SPEED);
+        int dx = 1 + rdm.nextInt(ENEMY_SPEED);
+        int dy = 1 + rdm.nextInt(ENEMY_SPEED);
         // random radius
         int radius = FROM_RADIUS + rdm.nextInt(TO_RADIUS - FROM_RADIUS);
-
         return new EnemyCircle(x, y, radius, dx, dy);
     }
 
