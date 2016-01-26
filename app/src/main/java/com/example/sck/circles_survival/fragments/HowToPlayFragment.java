@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 
 import com.example.sck.circles_survival.R;
 
-public class AboutGameFragment extends Fragment {
+public class HowToPlayFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_about, container, false);
+        return inflater.inflate(R.layout.fragment_how_to_play, container, false);
     }
 }
 

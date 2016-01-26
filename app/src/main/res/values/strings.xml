@@ -27,10 +27,10 @@
 
     <string name="please_set_bg_color">" Please set background color "</string>
 
-    <string name="about_game_text">"This is a very simple, but interesting game.
-        You should eat green circles and run away from the reds.
-        When your eat green, the player circle is growing, when the radius of the player becomes
-        bigger than radiuses of the red circles, their colors are changing to green.
+    <string name="about_game_text">"
+        This is a very simple, but interesting game.\n
+        You should eat green circles and run away from the reds.\n
+        When your eat green, the player circle is growing, when the radius of the player becomes bigger than radiuses of the red circles, their colors are changing to green.\n
         To win you need to eat all circles."</string>
 
     <string-array name="bground_colors">
@@ -45,5 +45,7 @@
 
     <string name="dialog_game_end_title">"GAME OVER"</string>
     <string name="dialog_game_end_btn_text">" OK "</string>
+
+    <string name="btn_how_to_play">"WATCH HOW TO PLAY"</string>
 
     </resources>

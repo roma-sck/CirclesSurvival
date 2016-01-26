@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.example.sck.circles_survival.adapters.ViewPagerAdapter;
 import com.example.sck.circles_survival.fragments.GameSettingsFragment;
 import com.example.sck.circles_survival.R;
-import com.example.sck.circles_survival.fragments.AboutGameFragment;
+import com.example.sck.circles_survival.fragments.HowToPlayFragment;
 import com.example.sck.circles_survival.views.GameCanvasView;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(new GameSettingsFragment(), getString(R.string.tab_game_settings_name));
-        viewPagerAdapter.addFragment(new AboutGameFragment(), getString(R.string.tab_game_about_name));
+        viewPagerAdapter.addFragment(new HowToPlayFragment(), getString(R.string.tab_game_about_name));
         viewPager.setAdapter(viewPagerAdapter);
     }
 
