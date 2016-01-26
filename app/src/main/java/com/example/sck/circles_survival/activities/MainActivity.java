@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(new GameSettingsFragment(), getString(R.string.tab_game_settings_name));
-        viewPagerAdapter.addFragment(new HowToPlayFragment(), getString(R.string.tab_game_about_name));
+        viewPagerAdapter.addFragment(new HowToPlayFragment(), getString(R.string.tab_game_how_to_play_name));
         viewPager.setAdapter(viewPagerAdapter);
     }
 

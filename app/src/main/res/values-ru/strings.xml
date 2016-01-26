@@ -17,7 +17,7 @@
     <string name="email_dialog_header">Отправить е-мэйл</string>
 
     <string name="tab_game_settings_name">"Настройки игры"</string>
-    <string name="tab_game_about_name">"О Приложении"</string>
+    <string name="tab_game_how_to_play_name">"О Приложении"</string>
 
     <string name="text_num_of_enemies">"Количество врагов: "</string>
 
@@ -45,5 +45,18 @@
 
     <string name="dialog_game_end_title">"ИГРА ОКОНЧЕНА"</string>
     <string name="dialog_game_end_btn_text">" ОК "</string>
+
+    <string name="btn_how_to_play">"ПОСМОТРЕТЬ КАК ИГРАТЬ"</string>
+
+    <string name="btn_image_previous">ПРЕДИДУЩЕЕ ИЗОБРАЖЕНИЕ</string>
+    <string name="btn_image_next">СЛЕДУЮЩЕЕ ИЗОБРАЖЕНИЕ</string>
+
+    <string-array name="images_instructions">
+        <item>Выбрать колличество врагов и цвет фона игры</item>
+        <item>Убегайте от красных кружочков и ешьте зеленых</item>
+        <item>Ешьте больше зеленых и растите</item>
+        <item>Ешьте больше и больше)</item>
+        <item>Когда вы съели все кружочки, игра окончена.\n Нажмите OK чтобы играть снова</item>
+    </string-array>
 
     </resources>

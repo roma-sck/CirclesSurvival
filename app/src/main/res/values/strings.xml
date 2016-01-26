@@ -17,7 +17,7 @@
     <string name="email_dialog_header">Send email</string>
 
     <string name="tab_game_settings_name">"Game Settings"</string>
-    <string name="tab_game_about_name">"About"</string>
+    <string name="tab_game_how_to_play_name">"How To Play"</string>
 
     <string name="text_num_of_enemies">"Number of enemies: "</string>
 
@@ -47,5 +47,16 @@
     <string name="dialog_game_end_btn_text">" OK "</string>
 
     <string name="btn_how_to_play">"WATCH HOW TO PLAY"</string>
+
+    <string name="btn_image_previous">PREVIOUS IMAGE</string>
+    <string name="btn_image_next">NEXT IMAGE</string>
+    
+    <string-array name="images_instructions">
+        <item>Set number of enemies and game background color</item>
+        <item>Run away from red circles and eat greens</item>
+        <item>Eat more greens and grow</item>
+        <item>Eat more and more)</item>
+        <item>When you ate all circles, the game is over.\n Press OK to play again</item>
+    </string-array>
 
     </resources>
