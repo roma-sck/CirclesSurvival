@@ -16,7 +16,7 @@
         android:textSize="@dimen/fragments_text_size" />
 
     <Button
-        android:id="@+id/btnImagePrevious"
+        android:id="@+id/btnHowToPlay"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
